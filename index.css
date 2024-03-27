@@ -1,9 +1,16 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
 body{
     font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0px 2px 12px rgb(140, 139, 139);
+    padding-bottom: 2em;
+    position: fixed;
+
+}
+.main{
+    /* margin-bottom: 100em; */
 }
 header {
     border-bottom: 1px solid #808080;
@@ -14,6 +21,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.fa-regular,.fa-solid {
+margin-left: 10px;
+position: absolute;
+}
+::placeholder{
+    position: absolute;
+    margin-left:10% ;
 }
 nav{
     display: flex;
@@ -73,6 +88,8 @@ li a{
 }
 section{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .left{
     width: 50%;
@@ -92,7 +109,7 @@ form{
     padding: 10px;
     box-shadow: 0px 0px 10px rgb(140, 139, 139);
     margin-top: 20px;
-    height: 90%;
+    height: 80%;
 }
 h2{
     color: rgb(202, 71, 23);
@@ -115,9 +132,13 @@ h2{
 }
 label{
     display: flex;
+    width: 100px;
+    
+    
 }
+
 input{
-    width: 90%;
+    width: 95%;
     box-sizing: border-box;
     font-size: 20px;
     border-radius: 5px;
@@ -142,8 +163,9 @@ i{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    /* width: 30%; */
     gap: 10px;
+
     font-size: 17px;
 }   
 p a{
