@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NGO</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,54 +12,76 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   </head>
   <body>
-    <div class="main">
-    <header>
+    <header class="head">
       <div class="logo">
-        <img src="asset/ngo logo.png" alt="Support Our Heroes" />
+        <img src="asset/ngoLogo.png" alt="Webpage Logo" class="logoImg" height="100" width="130"/>
       </div>
-      <nav>
-        <ul>
-          <li><a href="Home">Home</a></li>
-          <li><a href="Projects">Projects</a></li>
-          <li><a href="About">About</a></li>
-          <li><a href="Indian Army">Indian Army</a></li>
-          <li><a href="Letters of Appreciation">Letters of Appreciation</a></li>
-          <li><a href="Our FAQs">Our FAQs</a></li>
-          <li><a href="Contact Us">Contact Us</a></li>
+      <nav class="headerNav">
+        <ul class="headerUI">
+          <li class="headerLi"><a href="index.html" class="navlink active">Home</a></li>
+        <div class="dropdown">
+          <button class="dropbtn navlink">Projects
+              <i class="fa fa-caret-down downIcon"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="" class="dropdownProject">Project PITHU</a>
+            <a href="" class="dropdownProject">Project SEHAT</a>
+            <a href="" class="dropdownProject">Project SAKSHAM</a>
+            <a href="" class="dropdownProject">Project SASHAKT</a>
+            <a href="" class="dropdownProject">Project INSANIYAT</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn navlink">About Us
+              <i class="fa fa-caret-down downIcon"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="" class="dropdownProject">Vission & Mission</a>
+            <a href="" class="dropdownProject">Team</a>
+            <a href="" class="dropdownProject">Letters of<br> Appreciation</a>
+            <a href="" class="dropdownProject">Legal Status</a>
+            <a href="" class="dropdownProject">Tax Exemption<br> Donation FAQs</a>
+          </div>
+        </div>
+          <li class="headerLi"><a href="FAQs.html" class="navlink">Our FAQs</a></li>
+          <li class="headerLi"><a href="Contact.html" class="navlink">Contact Us</a></li>
         </ul>
       </nav>
-      <div class="upper-btn">
-        <button class="btn-1">Log in</button>
-        <button class="btn-2">Donate</button>
+      <div class="headerBtn">
+        <a href=""><button class="innerBtn">Log in<button></a>
+        <a href=""><button class="innerBtn filled">Donate</button></a>
+        <i class="fa-solid fa-bars headerIcon"></i>
       </div>
     </header>
-    <section>
-      <div class="left">
-        <form>
-          <div class="form-img">
-            <img src="asset/login-forn.png" alt="form-image" />
+    <section class="mainSection">
+      <div class="leftSection"> 
+        <form class="mainForm">
+          <div class="formImg">
+            <img src="asset/loginform2.png" class="w100" alt="form-image" height="120" width="366"/>
           </div>
-          <h2>Log In</h2>
-          <div class="email">
-            <label for="email">Email</label>
-            <div class="email-inside">
-              <i class="fa-regular fa-envelope"></i>
-              <input type="email" placeholder="Enter your email" required />
+          <div class="lowerForm">
+          <h2 class="formTag">Log In</h2>
+          <div class="formInput">
+            <div class="inputInside">
+            <label for="email" class="filled">Email</label>
+            <div class="formEmail">
+            <div class="inputIcon">
+              <i class="fa-regular fa-envelope formIcon"></i>
             </div>
+            <input type="email" name="email" class="inputField" placeholder="Enter your email">
           </div>
-          <div class="psw">
-            <label for="password">Password</label>
-            <div class="psw-inside">
-              <i class="fa-solid fa-key"></i>
-              <input
-                type="password"
-                placeholder="Enter your password"
-                required
-              />
+          </div>
+            <div class="inputInside">
+            <label for="password" class="filled" style="margin-top: 1em;">Password</label>
+            <div class="inputIcon">
+            <i class="fa-solid fa-key icon" aria-hidden="true" style="font-weight: 600;"></i>
+            <i class="fa-regular fa-eye-slash eyeIcon" aria-hidden="true"></i></div>
+            <input type="password" name="password" class="inputField" placeholder="Enter your password">
+          </div>
             </div>
-          </div>
           <div class="identification">
             <div class="remember">
               <input type="checkbox" name="remember me" />
@@ -69,21 +91,21 @@
               <!-- &nbsp is non blocking space, given when u require space without new line  -->
             </div>
             <div class="forgot">
-              <p><a href="Forgot password">Forgot password?</a></p>
+              <p class="forgotPass"><a href="Forgot password" class="forgotLink">Forgot password?</a></p>
             </div>
           </div>
           <div class="submit">
-            <button class="submit">Log In</button>
+            <button class="buttonSubmit">Log In</button>
           </div>
+        </div>
         </form>
       </div>
-      <div class="right">
-        <h1>Empower Fundraising Heroes: Your Appeal Sparks Change!</h1>
-        <div class="help-img">
-          <img src="asset/login-image.png" alt="Help Each Other" />
-        </div>
+      <div class="rightSection">
+      <div class="comment">
+        <h1 class="coreValue">Empower Fundraising Heroes: Your<br> Appeal Sparks Change!</h1>
       </div>
+    </div>
     </section>
-</div>
+    <div class="mediaImage"></div>
   </body>
 </html>
