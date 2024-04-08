@@ -39,7 +39,7 @@
   padding: 9px;
 }
 .head .headerNav .headerUL .headerLi .navlink:hover {
-  color: #e1960a;
+  color: #FD8900;
 }
 .head .headerNav .headerUL .headerLi .navlink::after {
   position: absolute;
@@ -53,8 +53,8 @@
   background: rgb(225, 150, 10);
   background: linear-gradient(
     90deg,
-    rgba(225, 150, 10, 1) 0%,
-    rgba(255, 255, 255, 1) 90%
+    #FD8900 0%,
+    #ffffff 90%
   );
   opacity: 0;
   transition: opacity 1s ease-out;
@@ -64,7 +64,7 @@
   opacity: 1;
 }
 .head .headerNav .headerUL .headerLi .active {
-  color: #e1960a;
+  color: #FD8900;
 }
 .head .headerNav .headerUL .dropdownLi {
   list-style: none;
@@ -90,10 +90,10 @@
   width: 100%;
   margin: 0 2px;
   border-radius: 2px;
-  background: #e1960a;
+  background: #FD8900;
   background: linear-gradient(
     90deg,
-    #e1960a 0%,
+    #FD8900 0%,
     #ffffff 90%
   );
   opacity: 0;
@@ -103,7 +103,7 @@
   opacity: 1;
 }
 .head .headerNav  .headerUL .dropdownLi .dropdown .dropbtn:hover {
-  color: #e1960a;
+  color: #FD8900;
 }
 .head .headerNav  .headerUL .dropdownLi .dropdown .dropdown-content {
   display: none;
@@ -202,7 +202,7 @@
   margin: 0px 20px;
 }
 .mainSection .leftSection .mainForm .lowerForm .formTag {
-  color: #e1960a;
+  color: #FD8900;
   margin: 5px 0 20px 0;
   font-size: 30px;
 }
@@ -432,7 +432,7 @@
   }
   .head .headerBtn .innerBtn {
     background-color: #fff;
-    color: rgb(60, 60, 148);
+    color: #3c3c94;
     border: 1px solid;
     border-radius: 4px;
     font-size: 14px;
@@ -442,7 +442,7 @@
     font-weight: 600;
   }
   .headerBtn .innerBtn:hover {
-    background-color: rgb(7, 7, 144);
+    background-color: #070790;
     color: white;
   }
   .head .headerBtn .innerBtn.filled {
@@ -498,8 +498,8 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    border: 1px solid gray;
-    box-shadow: 0px 0px 7px rgb(140, 139, 139);
+    border: 1px solid #808080;
+    box-shadow: 0px 0px 7px #8c8b8b;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
     padding-bottom: 10px;
@@ -514,7 +514,7 @@
     margin: 0px 15px;
   }
   .mainSection .leftSection .mainForm .lowerForm .formTag {
-    color: rgb(225, 150, 10);
+    color: FD8900;
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 25px;
@@ -541,7 +541,7 @@
     padding: 7px;
     padding-left: 30px;
     margin-bottom: 10px;
-    background-color: rgb(236, 235, 234);
+    background-color: #ecebea;
   }
   .mainSection .leftSection .mainForm .lowerForm .inputField::placeholder {
     opacity: 0.5;
@@ -594,7 +594,7 @@
     .forgotPass
     .forgotLink {
     text-decoration: none;
-    color: rgb(51, 140, 170);
+    color: #338caa;
     font-size: 14px;
   }
   .mainSection .leftSection .mainForm .lowerForm .buttonSubmit {
@@ -603,7 +603,7 @@
     margin-bottom: 3%;
   }
   .mainSection .leftSection .mainForm .lowerForm .submit .buttonSubmit {
-    background-color: rgb(7, 7, 144);
+    background-color: #070790;
     color: #fff;
     cursor: pointer;
     border: none;
@@ -614,7 +614,7 @@
     font-weight: 500;
   }
   .mainSection .leftSection .mainForm .lowerForm .submit .buttonSubmit:hover {
-    color: rgb(7, 7, 144);
+    color: #070790;
     background-color: #fff;
     border: 1px solid;
   }
@@ -669,12 +669,12 @@
   .head .headerNav .headerUL .headerLi .navlink {
     text-decoration: none;
     color: inherit;
-    color: rgb(105, 97, 97);
+    color: #696161;
     position: relative;
     padding: 9px;
   }
   .head .headerNav .headerUL .headerLi .navlink:hover {
-    color: rgb(225, 150, 10);
+    color: FD8900;
   }
   .head .headerNav .headerUL .headerLi .navlink::after {
     position: absolute;
@@ -685,10 +685,10 @@
     width: 100%;
     margin: 0 2px;
     border-radius: 2px;
-    background: rgb(225, 150, 10);
+    background: FD8900;
     background: linear-gradient(
       90deg,
-      rgba(225, 150, 10, 1) 0%,
+      FD8900 0%,
       rgba(255, 255, 255, 1) 90%
     );
     opacity: 0;
@@ -701,7 +701,7 @@
     opacity: 1;
   }
   .head .headerNav .headerUL .headerLi .active {
-    color: rgb(225, 150, 10);
+    color: FD8900;
   }
   .head .headerNav .dropdown .dropbtn {
     font-size: 18px;
@@ -712,7 +712,7 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: inherit;
     margin: 0;
-    color: rgb(105, 97, 97);
+    color: #696161;
     position: relative;
   }
   .head .headerNav .dropdown .dropbtn::after {
@@ -724,11 +724,11 @@
     width: 100%;
     margin: 0 2px;
     border-radius: 2px;
-    background: rgb(225, 150, 10);
+    background: FD8900;
     background: linear-gradient(
       90deg,
-      rgba(225, 150, 10, 1) 0%,
-      rgba(255, 255, 255, 1) 90%
+      FD8900 0%,
+      #ffffff 90%
     );
     opacity: 0;
     transition: opacity 1s ease-out;
@@ -737,7 +737,7 @@
     opacity: 1;
   }
   .head .headerNav .dropdown .dropbtn:hover {
-    color: rgb(225, 150, 10);
+    color: FD8900;
   }
   .head .headerNav .dropdown .dropdown-content {
     display: none;
@@ -748,11 +748,11 @@
     z-index: 1;
   }
   .head .headerNav .dropdown .dropdown-content .dropdownProject {
-    border-bottom: 1px solid rgb(189, 184, 184);
+    border-bottom: 1px solid #bdb8b8;
   }
   .head .headerNav .dropdown .dropdown-content .dropdownProject {
     float: none;
-    color: rgb(39, 37, 37);
+    color: #272525;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -839,7 +839,7 @@
     margin: 0px 20px;
   }
   .mainSection .leftSection .mainForm .lowerForm .formTag {
-    color: rgb(225, 150, 10);
+    color: FD8900;
     margin: 5px 0 20px 0;
     font-size: 30px;
   }
