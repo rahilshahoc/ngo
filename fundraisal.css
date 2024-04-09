@@ -123,18 +123,22 @@
   }
   .head .headerNav  .headerUL .dropdownLi .dropdown:hover .dropdown-content {
     display: block;
-    padding: 5px;
     font-weight: 500;
+    font-size: 20px;
   }
   .head .headerNav  .headerUL .dropdownLi .dropdown:hover .dropdown-content .dropdownProject:hover {
     color: #020257;
     background-color: #f1f1f1;
   }
+  .downIcon {
+    margin-left: 5px;
+  }
   .head .headerBtn {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 20px;
+    cursor: pointer;
   }
   .head .headerBtn .innerBtn {
     background-color: #070790;
@@ -145,6 +149,7 @@
     line-height: 28.8px;
     border: none;
     outline: none;
+    cursor: pointer;
   }
   .head .headerBtn .innerBtn:hover {
     background-color: #fff;
@@ -154,6 +159,18 @@
   .head .headerBtn .headerIcon {
     font-size: 25px;
     display: none;
+  }
+  .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .userLogin {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
   }
   .mainSection {
     width: 100%;
@@ -191,16 +208,16 @@
       justify-content: center;
       align-items: center;
     }
-    .subGoal h2 {
+    .subGoal .currentGoal {
       font-size: 90px;
       font-weight: 500;
       color: #000080;
     }
-    .subGoal p {
+    .subGoal .completeGoal {
       font-size: 46px;
       font-weight: 400;
     }
-    .subGoal span {
+    .subGoal .totalGoal {
       color: #000080;
       font-weight: 500;
     }
@@ -209,6 +226,7 @@
     width: 600px;
     position: relative;
     bottom: 250px;
+    font-family: Arial, Helvetica, sans-serif;
 }
   .mainSection .subSection .resolution .resolutionAbout {
     display: flex;
@@ -266,14 +284,32 @@
     line-height: 35px;
     text-align: center;
     border: none;
+    position: relative;
     outline: none;
-    padding: 10px 60px;
+    padding: 10px 30px;
     background-color: #fff;
     cursor: pointer;
+    position: relative;
+    left: 82px;
   }
   .article .userStory.active {
+    padding: 15px;
     color: #FD8900;
-    border-bottom: 8px solid #FD8900;
+  }
+  .article .userStory::after {
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    margin: 0 2px;
+    border-radius: 2px;
+    background: #FD8900;
+    opacity: 0;
+  }
+  .article .userStory.active::after {
+    opacity: 1;
   }
   .mainAside {
     width: 100%;
@@ -283,7 +319,10 @@
     width: 50%;
     position: relative;
     bottom: 70px;
-    margin-left: 30px;
+    margin-left: 83px;
+  }
+  .mainAside .rightAside {
+    margin-left: 57px;
   }
   .mainAside .leftAside .aboutMe {
     font-weight: 500;
@@ -296,13 +335,15 @@
     font-size: 34px;
     line-height: 35px;
     color: #4A4A4A;
-    margin: 40px 0 20px 0; 
-  }
+    margin: 80px 0 40px 0;
+    }
   .mainAside .rightAside .container {
-    width: 80%;
+    width: 90%;
     background-color: #E8E8E8;
     padding: 10px;
     margin-left: 30px;
+    position: relative;
+    bottom: 30px;
   }
   .mainAside .rightAside .container .supporters {
     font-weight: 600;
@@ -316,17 +357,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 23px;
     font-weight: 400;
     font-size: 28px;
     line-height: 34px;
     background-color: #fff;
     color: #000000;
-    margin: 10px;
+    margin: 16px 10px;
     cursor: pointer;
   }
-  .mainAside .rightAside .container .ourSupporters i {
+  .mainAside .rightAside .container .ourSupporters .rightTriangle {
     color: #000080;
+    height: 30px;
+    width: 30px;
   }
   .mainFooter {
     width: 100%;
@@ -345,7 +388,7 @@
     gap: 15px;
     font-size: 18px;
   }
-  .mainFooter .upperFooter .aboutUs h3 , .mainFooter .upperFooter .donate h3 , .mainFooter .upperFooter .scanner h3 {
+  .mainFooter .upperFooter .aboutUs .subTag , .mainFooter .upperFooter .donate .subTag , .mainFooter .upperFooter .scanner .subTag {
     margin-bottom: 30px;
     font-size: 25px;
     font-family: "Montserrat Alternates", Sans-serif;
@@ -353,6 +396,8 @@
   .mainFooter .upperFooter .aboutUs .aboutCompany .aboutUsLink , .mainFooter .upperFooter .donate .aboutUsLink  {
     text-decoration: none;
     color: #fff;
+    letter-spacing: 2px;
+    line-height: 2em;
   }
   .mainFooter .upperFooter .scanner .scannerId {
     font-size: 20px;
@@ -373,10 +418,12 @@
   }
   .mainFooter .lowerFooter .socialmedia .socialmediaImage {
     border-radius: 50%;
-    transition: height 0.5s ease-out;
   }
   .mainFooter .lowerFooter .socialmedia .socialmediaImage:hover {
-    height: 55px;
+    transform: scale(1.1);
+  }
+  .mainFooter .lowerFooter .socialmedia img.socialmediaImage {
+    margin-left: 10px;
   }
   .mainFooter .lowerFooter .copyright {
     font-size: 20px;
