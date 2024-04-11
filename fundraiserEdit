@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fundraiserEdit.css" rel="stylesheet">
+</head>
+<body>
+    <section class="profilewrapper">
+        <div class="view">
+        
+        </div>
+            <div class="profile">
+                <h1>Profile Details</h1>
+                <form>
+                    <div class="row">
+                    <div class="col1">
+                    <label for="full Name">Full Name</label><br>
+                    <input type="text" id="full Name" name="full Name"value=""placeholder="enter your full name">
+                    </div>
+                    <div class="col2">
+                    <label for="email">Email Address</label><br>
+                    <input type="text"placeholder="Enter Email" name="Email" required>
+                    </div>
+                    <div class="col3">
+                    <label for="contact">Contact No</label><br>
+                    <input type="number" id="contact" name="contact" value=""><br>
+                    </div><br>
+                    </div>
+                    <div class="row">
+                    <div class="col4">
+                    <label for="address">Address</label><br>
+                    <textarea id="w3review" name="w3review" rows="3" cols="20"></textarea>
+                    </div>
+                    <div class="col5">
+                    <label for="city">City</label><br>
+                    <input type="text" id="city" name="city" value="">
+                    </div>
+                    <div class="col6">
+                        <label for="state">State</label><br>
+                        <input type="text" id="state" name="state" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col7">
+                        <label for="country">Country</label><br>
+                        <input type="text" id="country" name="country" value="">
+                    </div>
+                    <div class="col8">
+                        <label for="pincode">Pincode</label><br>
+                        <input type="text" id="pincode" name="pincode" value="">
+                    </div>
+                    <div class="col9">
+                        <label for="nationality">Nationality</label><br>
+                        <input type="text" id="nationality" name="nationality" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col10">
+                        <label for="date of birth">Date of Birth</label><br>
+                        <input type="date" id="date of birth" name="date of birth" value="">
+                    </div>
+                    <div class="col11">
+                        <label for="pan no.">PAN no.</label><br>
+                        <input type="text" id="pan no." name="pan no." value="">
+                    </div>
+                </div>
+                <button type="submit" value="save changes" class="ctaBtn">Save Changes</button>
+                </form>
+            </div>
+</section>
+<footer>
+    <div class="Copyright">
+        <p>Copyright © 2024 Support Our Heroes</p>
+      </div>
+</footer>
+</body>
+</html>
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.profilewrapper{
+    width: 100%;
+    display: flex;
+}
+.profilewrapper .view {
+    width: 18%;
+}
+.profilewrapper .profile{
+    width: 80%;
+}   
+.profilewrapper .profile .row {
+    display: flex;
+}
+.profilewrapper .profile .row .col1 input{
+    width: 300px;
+    height: 25px;    
+}
+.profilewrapper .profile .row .col2 {
+    margin-left: 50px; 
+}
+.col2 input{
+    width: 300px;
+    height: 25px; 
+}
+.col3 {
+    margin-left: 50px;
+}
+.col3 input{
+    width: 300px;
+    height: 25px; 
+} 
+.col3 input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.row {
+    display: flex;
+}
+.col4 {
+    margin-top: 30px;
+}
+.col4 textarea{
+    width: 300px;
+    height: 150px;
+}
+.col5 {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.col5 input{
+    width: 300px;
+    height: 25px;
+}
+.col6 {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.col6 input{
+    width: 300px;
+    height: 25px;
+}
+.col7 input{
+    width: 300px;
+    height: 25px;
+}
+.col7 {
+    margin-top: 30px;
+}
+.col8 {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.col8 input{
+    width: 300px;
+    height: 25px;
+}
+.col9 {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.col9 input{
+    width: 300px;
+    height: 25px;
+}
+.col10 {
+    margin-top: 30px;
+}
+.col10 input{
+    width: 300px;
+    height: 25px;
+}
+.col11 {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.col11 input{
+    width: 300px;
+    height: 25px;
+}
+.ctaBtn {
+    background: #015190;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.Copyright {
+   justify-content: center;
+   width: 100%;
+   display: flex;
+   margin-top: 126px;
+}
