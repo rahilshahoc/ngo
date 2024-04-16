@@ -86,6 +86,10 @@ aside {
     align-items: flex-start;
     width: 100%;
 }
+.container a {
+    text-decoration: none;
+    width: 100%;
+}
 .container p {
     padding: 15px 10px;
     color: #0000ff;
