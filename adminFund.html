@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="adminFund.css">
+</head>
+
+<body>
+    <section>
+        <div class="main">
+            <div class="leftSection">
+                <div class="content">
+                    <h1>Heroes Who Shielded Us, Let's Shield Their Future.</h1>
+                    <p>Creating a society where every family of our defence<br> martyrs & veterans is self-dependent and can
+                        live a<br>
+                        healthy life like us.</p>
+                </div>
+            </div>
+            <div class="rightSection">
+                <div class="imgArea">
+                    <img src="asset/FrontImage.png" alt="Soldiers" height="300" width="100">
+                </div>
+            </div>
+        </div>
+        <div class="lowerPart">
+            <p>Fundraising Page Link: <a href="#">http://xyz.123/ngo-123</a></p>
+        </div>
+    </section>
+    <aside>
+        <div class="leftAside">
+            <div class="container">
+                <a href="#"><p><img src="asset/dashboard.png" alt="dashboard" class="sidebarImg" height="16" width="16">Dashboard</p></a>
+                <a href="#"><p class="active"><img src="asset/circle.png" alt="fundraiser" class="sidebarImg" height="16" width="16">Fundraiser</p></a>
+                <a href="#"><p><i class="fa-solid fa-image asideIcon"></i>Photos</p></a>
+                <a href="#"><p><img src="asset/table.png" alt="Report" class="sidebarImg" height="16" width="16">Donations Report</p></a>
+            </div>
+        </div>
+
+        <!-- admin Fundraiser start -->
+ 
+        <div class="rightAside">
+            <h1>Update Fundraiser Page</h1>
+            <form>
+                <div class="mainCol">
+                <div class="firstCol">
+                <label for="FundraisingTarget">Fundraising Target (INR)*<br>
+                    <input type="number" name="FundraisingTarget" id="FundraisingTarget">
+                </label>
+                <label for="MyStory">About My Resolution *<br>
+                    <textarea name="MyStory" id="MyStory" cols="30" rows="10"></textarea>
+                </label>
+            </div>
+            <div class="secondCol">
+                <label for="MyStory" class="aboutMe">My Story *<br>
+                    <textarea name="MyStory" id="MyStory" cols="30" rows="16"></textarea>
+                </label>
+            </div>
+        </div>
+        <div class="thirdCol">
+            <label for="MoneyRaised">Money Raised For *<br>
+                <textarea name="MoneyRaised" id="MoneyRaised" cols="30" rows="5"></textarea>
+            </label>
+        </div>
+        <div class="submitButton">
+        <button type="submit" class="formButton">Save Changes</button>
+    </div>
+           </form>
+        </div>
+    </aside>
+</body>
+</html>
