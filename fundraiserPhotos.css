@@ -129,46 +129,67 @@ aside {
     padding: 15px 0;
     font-weight: bold;
 }
-label {
-    font-weight: bold;
+form {
+    padding: 10px 10px;
+    background-color: #fff;
 }
-.mainCol {
+.upperForm {
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
 }
-.firstCol {
+.lowerForm {
     display: flex;
-    flex-direction: column;
-    gap: 50px;
-    margin-top: 10px;
-}
-#FundraisingTarget , #MyStory , #MoneyRaised {
-    margin-top: 5px;
-    width: 330px;
-    outline: none;
-    padding-left: 1px;
-}
-.aboutMe {
-position: relative;
-top: 10px;
-}
-.thirdCol {
+    justify-content: space-between;
     margin-top: 20px;
+    align-items: center;
 }
-#MoneyRaised {
-    width: 100%;
-}
-.submitButton {
+.formsearchButton {
     display: flex;
-    justify-content: flex-end;
-}
-.formButton {
+    align-items: center;
+    gap: 8px;
+    padding: 10px 10px;
+    height: 30px;
+    cursor: pointer;
     background-color: #0000ff;
     color: #fff;
-    padding: 10px 15px;
-    border: none;
-    outline: none;
-    cursor: pointer;
+    border: 2px solid #0000ff;
     border-radius: 6px;
-    margin-top: 15px;
+}
+.formsearchButton a {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+form input {
+    border: 1px solid;
+    outline: none;
+    margin-top: 5px;
+    padding: 3px 3px;
+    border-radius: 6px;
+    background-color: #dfdada;
+}
+.downloadExcel {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: #fff;
+    color: #0000FF;
+    border: 1px solid;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-top: 20px;
+}
+th , td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
 }
