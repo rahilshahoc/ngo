@@ -11,7 +11,7 @@ section {
     height: 300px;
     display: flex;
     flex-direction: row;
-    background-image: url(asset/BackgroundImage.png);
+    background-image: url(../asset/BackgroundImage.png);
     position: relative;
     border: 1px solid #fff;
     border-bottom: none

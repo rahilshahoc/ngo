@@ -322,7 +322,7 @@
 .mainSection .rightSection .comment {
   height: 627px;
   width: 100%;
-  background-image: url(asset/ProjectSection.png);
+  background-image: url(../asset/ProjectSection.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -460,7 +460,7 @@
   .mainSection .rightSection .comment {
     height: 80px;
     width: 100%;
-    background-image: url(asset/ProjectSection.png);
+    background-image: url(../asset/ProjectSection.png);
     background-image: none;
     background-repeat: no-repeat;
     background-size: contain;
@@ -619,7 +619,7 @@
     border: 1px solid;
   }
   .subsection {
-    background-image: url(asset/ProjectSection.png);
+    background-image: url(../asset/ProjectSection.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -968,7 +968,7 @@
   .mainSection .rightSection .comment {
     height: 627px;
     width: 100%;
-    background-image: url(asset/ProjectSection.png);
+    background-image: url(../asset/ProjectSection.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
