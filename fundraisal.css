@@ -232,7 +232,7 @@
   background: #0fa900;
   background: radial-gradient(circle, #0fa900 0%, #d2f2cf 90%);
   position: relative;
-  /* bottom: 330px; */
+  bottom: 55px;
 }
 .goal .subGoal {
   height: 440px;
@@ -266,6 +266,7 @@
   justify-content: center;
   height: 100%;
   flex-direction: column;
+  margin-top: -45px;
 }
 .resolution .resolutionAbout {
   display: flex;
