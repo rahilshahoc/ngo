@@ -124,43 +124,72 @@ aside {
     padding: 0 20px 20px;
     background-color: #dfdada;
 }
-.upperAside {
-    display: flex;
-    justify-content: space-between;
-}
-.upperAside a {
-    text-decoration: none;
-}
 .rightAside h1 {
     color: #FD8900;
     padding: 15px 0;
     font-weight: bold;
 }
-.uploadBtn {
+form {
+    padding: 10px 10px;
     background-color: #fff;
-    color: #0000ff;
-    padding: 5px 10px;
-    outline: none;
-    border: 1px solid;
-    cursor: pointer;
-    font-size: 14px;
+}
+.upperForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lowerForm {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.formsearchButton {
     display: flex;
     align-items: center;
-    gap: 6px;
-    margin-top: 10px;
-    height: 35px;
+    gap: 8px;
+    padding: 10px 10px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #0000ff;
+    color: #fff;
+    border: 2px solid #0000ff;
     border-radius: 6px;
 }
-.upperImg {
+.formsearchButton a {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+form input {
+    border: 1px solid;
+    outline: none;
+    margin-top: 5px;
+    padding: 3px 3px;
+    border-radius: 6px;
+    background-color: #dfdada;
+}
+.downloadExcel {
     display: flex;
-    justify-content: space-evenly;
+    gap: 6px;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: #fff;
+    color: #0000FF;
+    border: 1px solid;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
     margin-top: 20px;
 }
-.LowerImg {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-}
-.upperImg img , .LowerImg img {
-    background-color: #eaeaea;
+th , td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
 }
