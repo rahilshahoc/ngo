@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Donation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="offlineDonation.css">
+</head>
+<body>
+    <section>
+        <div class="leftSection">
+            <a href="#"><p><img src="../asset/dashboard.png" alt="dashboard" height="16" width="16">Dashboard</p></a>
+           <a href="#"><p><i class="fa-regular fa-address-book"></i>Credentials</p></a> 
+            <a href="#"><p><i class="fa-solid fa-coins"></i>Fundraiser</p></a>
+            <a href="#"><p class="active"><i class="fa-solid fa-hand-holding-dollar"></i>Donation</p></a>
+        </div>
+        <div class="rightSection">
+            <div class="rightpart">
+            <h1>Fundraiser Information</h1>
+            <form>
+            <div class="fundraiserDetail">
+            <span>
+                <span>Fundraiser E-mail <span class="compulsory">*</span></span><br>
+                <input type="text" name="fundraiserEmail" id="fundraiserEmail" placeholder="Enter your fundraiser e-mail">
+            </span>
+            <span>
+                <span>Amount <span class="compulsory">*</span></span><br>
+                <input type="number" name="amount" id="amount" placeholder="Enter your amount">
+            </span>
+            </div>
+            <h2>Personal Information</h2>
+            <div class="personalDetail">
+                <div class="firstpersonalDetail">
+                    <span>
+                        <span>First Name <span class="compulsory">*</span></span><br>
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter your first name">
+                    </span>
+                    <span>
+                        <span>Last Name</span><br>
+                        <input type="text" name="lastName" id="lastName" placeholder="Enter your last name">
+                    </span>
+                    <span>
+                        <span>Email <span class="compulsory">*</span></span><br>
+                        <input type="email" name="email" id="email" placeholder="Enter your e-mail">
+                    </span>
+                </div>
+                <div class="secondpersonalDetail">
+                    <span>
+                        <span>Address</span><br>
+                        <input type="text" name="address" id="address" placeholder="Enter your address">
+                    </span>
+                    <span>
+                        <span>City</span><br>
+                        <input type="text" name="city" id="city" placeholder="Enter your city">
+                    </span>
+                    <span>
+                        <span>State</span><br>
+                        <input type="text" name="state" id="state" placeholder="Enter your state">
+                    </span>
+                </div>
+                <div class="thirdpersonalDetail">
+                    <span>
+                        <span>Country</span><br>
+                        <input type="text" name="country" id="country" placeholder="Enter your country">
+                    </span>
+                    <span>
+                        <span>Pincode</span><br>
+                        <input type="text" name="pincode" id="pincode" placeholder="Enter your pincode">
+                    </span>
+                    <span>
+                        <span>Mobile Number <span class="compulsory">*</span></span><br>
+                        <input type="text" name="mobileNumber" id="mobileNumber" placeholder="Enter your mobile no." maxlength="10" pattern="[1-9]{1}[0-9]{9}">
+                    </span>
+                </div>
+            </div>
+            <h2>Donation Information</h2>
+            <div class="donationDetail">
+                <div class="firstdonationDetail">
+                <span>
+                    <span>PAN Number</span><br>
+                    <input type="text" name="PANnumber" id="PANnumber" placeholder="Enter your PAN number">
+                </span>
+                <span>
+                    <span>Offline Payment Method <span class="compulsory">*</span></span><br>
+                    <input type="text" name="offlinePayment" id="offlinePayment" placeholder="Choose your payment method">
+                </span>
+                <span>
+                    <span>Reference Number <span class="compulsory">*</span></span><br>
+                    <input type="text" name="bankDetail" id="bankDetail" placeholder="Enter your Reference Number">
+                </span>
+            </div>
+            <div class="seconddonationDetail">
+                <span class="offlinePaymentDate">
+                    <span>Donation (Date) <span class="compulsory">*</span></span><br>
+                    <input type="date" name="paymentDate" id="paymentdate" class="paymentDate" placeholder="Enter your Cheque/DD/NEFT date">
+                </span>
+                <span>
+                    <span>Bank Name</span><br>
+                    <input type="text" name="bankName" id="bankName" placeholder="Enter your bank name">
+                </span>
+                <span>
+                    <span>Bank Branch Name</span><br>
+                    <input type="text" name="branchName" id="branchName" placeholder="Enter your branch name">
+                </span>
+            </div>
+            </div>
+            <div class="formButton">
+                <button type="reset" class="fundButton donorButton">Cancel</button>
+                <button type="submit" class="fundButton">Submit</button>
+            </div>
+        </form>
+        </div>
+        </div>
+    </section>
+</body>
+</html>

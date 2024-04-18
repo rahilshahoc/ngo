@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    width: 100%;
+    display: flex;
+}
+.leftSection {
+    width: 20%;
+    border: 1px solid lightgray;
+    padding: 24px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.leftSection a {
+    text-decoration: none;
+    color: #505050;
+    border-radius: 8px;
+}
+.leftSection a:hover {
+    background-color: #010080B2;
+    color: #fff;
+}
+.leftSection p {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    gap: 10px;
+    font-size: 20px;
+}
+.active {
+    background-color: #010080B2;
+    color: #fff;
+}
+.rightSection {
+    width: 80%;
+}
+.rightpart {
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    margin: 6px;
+}
+h1 {
+    padding: 40px 40px 0 40px;
+}
+.fundraiserDetail {
+    display: flex;
+    gap: 10px;
+    padding: 16px 40px 30px 40px;
+}
+.fundraiserDetail input , .firstpersonalDetail input , .secondpersonalDetail input , .thirdpersonalDetail input , .firstdonationDetail input , .seconddonationDetail input {
+    width: 450px;
+    height: 40px;
+    padding: 8px 12px;
+    display: flex;
+    gap: 8px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px 0px #1018280D;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 6px;
+    outline: none;
+}
+input::placeholder {
+    color: #667085;
+}
+h2 {
+    padding: 0 40px 0px 40px;
+}
+.firstpersonalDetail , .secondpersonalDetail , .thirdpersonalDetail , .firstdonationDetail , .seconddonationDetail {
+    display: flex;
+    gap: 10px;
+    padding: 16px 40px 30px 40px;
+}
+.secondpersonalDetail , .thirdpersonalDetail , .seconddonationDetail {
+    padding-top: 0;
+}
+.firstpersonalDetail input , .secondpersonalDetail input , .thirdpersonalDetail input , .firstdonationDetail input , .seconddonationDetail input {
+    width: 300px;
+}
+.formButton {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    padding: 0 16px;
+}
+.fundButton {
+    padding: 10px 20px;
+    height: 45px;
+    width: 95px;
+    border: 1px solid #79747E;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #010080;
+    font-size: 16px;
+    cursor: pointer;
+}
+.fundButton.donorButton {
+    background-color: #fff;
+    color: #505050;
+}
+input#paymentdate {
+    width: 170px;
+    color: #667085;
+}
+.compulsory {
+    color: #ff0000;
+}
