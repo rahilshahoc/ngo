@@ -106,6 +106,7 @@ aside {
     border-radius: 8px;
     cursor: pointer;
     display: flex;
+    align-items: center;
 }
 .container p a {
     text-decoration: none;
@@ -159,12 +160,20 @@ label {
     outline: none;
     padding-left: 1px;
 }
+#FundraisingTarget {
+    height: 35px;
+    width: 450px;
+}
+#MyStory {
+    width: 450px;
+}
 .aboutMe {
 position: relative;
 top: 10px;
 }
 .thirdCol {
     margin-top: 20px;
+    padding: 0 40px;
 }
 #MoneyRaised {
     width: 100%;

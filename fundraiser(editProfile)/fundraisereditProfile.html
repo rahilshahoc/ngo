@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fundraisereditProfile.css">
+</head>
+<body>
+    <section class="mainSection">
+        <div class="leftSection">
+            <a href="#" class="sidebarLink"><p class="sideBar active"><i class="fa-solid fa-user"></i> Account Details</p></a>
+            <a href="#" class="sidebarLink"><p class="sideBar"><i class="fa-regular fa-image"></i> Upload Profile Photo</p></a>
+        </div>
+        <div class="rightSection">
+            <div class="accountDetails">
+                <h1>Account Details</h1>
+                <form>
+                    <div class="firstpersonalDetail">
+                        <span>
+                            <span>First Name <span class="compulsory">*</span></span><br>
+                            <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
+                        </span>
+                        <span>
+                            <span>Last Name <span class="compulsory">*</span></span><br>
+                            <input type="text" name="lastName" id="lastName" placeholder="Enter your last name">
+                        </span>
+                        <span>
+                            <span>Email <span class="compulsory">*</span></span><br>
+                            <input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
+                        </span>
+                    </div>
+                    <div class="secondpersonalDetail">
+                        <span>
+                            <span>Address <span class="compulsory">*</span></span><br>
+                            <input type="text" name="address" id="address" placeholder="Enter your address">
+                        </span>
+                        <span>
+                            <span>City</span><br>
+                            <input type="text" name="city" id="city" placeholder="Enter your city">
+                        </span>
+                        <span>
+                            <span>State</span><br>
+                            <input type="text" name="state" id="state" placeholder="Enter your state">
+                        </span>
+                    </div>
+                    <div class="thirdpersonalDetail">
+                        <span>
+                            <span>Country</span><br>
+                            <input type="text" name="country" id="country" placeholder="Enter your country">
+                        </span>
+                        <span>
+                            <span>Pincode</span><br>
+                            <input type="text" name="pincode" id="pincode" placeholder="Enter your pincode">
+                        </span>
+                        <span>
+                            <span>Mobile Number <span class="compulsory">*</span></span><br>
+                            <input type="number" name="mobileNumber" id="mobileNumber" placeholder="Enter your mobile no." maxlength="10" pattern="[1-9]{1}[0-9]{9}]" required>
+                        </span>
+                    </div>
+                    <div class="fourthpersonalDetail">
+                        <span>
+                        <span>DOB</span><br>
+                        <input type="date" name="PANnumber" id="DOB" placeholder="Enter your PAN number">
+                    </span>
+                    <span>
+                    <span>PAN Number</span><br>
+                    <input type="text" name="PANnumber" id="PANnumber" placeholder="Enter your PAN number">
+                </span>
+                    </div>
+                    <div class="formButton">
+                        <button type="reset" class="fundButton donorButton">Cancel</button>
+                        <button type="submit" class="fundButton">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
