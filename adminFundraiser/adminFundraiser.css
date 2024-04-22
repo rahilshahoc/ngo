@@ -6,28 +6,29 @@
 body {
   font-family: "Inter", sans-serif;
 }
-section {
+.mainSection {
     width: 100%;
     display: flex;
 }
-.leftSection {
+.mainSection .leftSection {
     width: 20%;
+    height: 100vh;
     border: 1px solid lightgray;
     padding: 24px 4px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-.leftSection a {
+.mainSection .leftSection .sidebarLink {
     text-decoration: none;
     color: #505050;
     border-radius: 8px;
 }
-.leftSection a:hover {
+.mainSection .leftSection .sidebarLink:hover {
     background-color: #010080B2;
     color: #fff;
 }
-.leftSection p {
+.mainSection .leftSection .sideBar {
     padding: 16px 24px;
     display: flex;
     align-items: center;
@@ -35,49 +36,49 @@ section {
     gap: 10px;
     font-size: 20px;
 }
-.active {
+.mainSection .leftSection .sideBar.active {
     background-color: #010080B2;
     color: #fff;
 }
-.rightSection {
+.mainSection .rightSection {
     width: 80%;
 }
-.rightsubSection {
+.mainSection .rightSection .rightsubSection {
     margin: 24px 24px 0 24px;
     border: 1px solid #EAECF0;
     border-radius: 8px;
 }
-.rightSection .rightsubSection h1 {
+.mainSection .rightSection .rightsubSection .mainTag {
     padding: 20px 24px;
 }
-.adminTable {
+.mainSection .rightSection .rightsubSection .adminTable {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
-  .tableRow, .tableHead {
+  .mainSection .rightSection .rightsubSection .adminTable .tableRow, .tableHead {
     border: 1px solid #e4e1e1;
     text-align: left;
     padding: 8px;
     background-color: #fff;
   }
-  .tableHead {
+  .mainSection .rightSection .rightsubSection .adminTable .tableHead {
     background-color: #f8f8f8;
   }
-  .switch {
+  .mainSection .rightSection .rightsubSection .adminTable .tableRow .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
   }
   
-  .switch input { 
+  .mainSection .rightSection .rightsubSection .adminTable .tableRow .switch input { 
     opacity: 0;
     width: 0;
     height: 0;
   }
   
-  .slider {
+  .mainSection .rightSection .rightsubSection .adminTable .tableRow .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -89,7 +90,7 @@ section {
     transition: .4s;
   }
   
-  .slider:before {
+  .mainSection .rightSection .rightsubSection .adminTable .tableRow .slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -101,28 +102,28 @@ section {
     transition: .4s;
   }
   
-  input:checked + .slider {
+  .mainSection .rightSection .rightsubSection .adminTable .tableRow input:checked + .slider {
     background-color: #38D147;
   }
   
-  input:focus + .slider {
+  .mainSection .rightSection .rightsubSection .adminTable .tableRow input:focus + .slider {
     box-shadow: 0 0 1px #38D147;
   }
   
-  input:checked + .slider:before {
+  .mainSection .rightSection .rightsubSection .adminTable .tableRow input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
   
   /* Rounded sliders */
-  .slider.round {
+  .mainSection .rightSection .rightsubSection .adminTable .tableRow .slider.round {
     border-radius: 34px;
   }
   
-  .slider.round:before {
+  .mainSection .rightSection .rightsubSection .adminTable .tableRow .slider.round:before {
     border-radius: 50%;
   }
-  .editTable {
+  .mainSection .rightSection .rightsubSection .adminTable .tableRow .editTable {
     color: #000;
-  }
+  } 
