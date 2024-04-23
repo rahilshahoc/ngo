@@ -92,7 +92,7 @@ form input::placeholder {
 .formButton .fundButton {
     padding: 10px 20px;
     height: 45px;
-    width: 95px;
+    min-width: 95px;
     border: 1px solid #79747E;
     border-radius: 8px;
     color: #fff;
