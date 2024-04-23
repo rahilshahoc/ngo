@@ -201,3 +201,16 @@ th , td {
     text-align: center;
     padding: 8px;
 }
+.tableButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tableButton .iconButton {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 5px;
+}
