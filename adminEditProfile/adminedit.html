@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adminEdit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="adminEdit.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Edit Fundraiser Details</h1>
+        <div class="fundraiserDetail">
+            <span>
+                <span>ID</span><br>
+                <input type="text" name="fundraiserId" id="fundraiserId" placeholder="Enter your fundraiser Id" required disabled>
+            </span>
+            <span>
+                <span>Name</span><br>
+                <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+            </span>
+            </div>
+            <div class="secondfundraiserDetail">
+                <span>
+                    <span>Mobile Number</span><br>
+                    <input type="number" name="mobileNumber" id="mobileNumber" placeholder="Enter your mobile no." maxlength="10" pattern="[1-9]{1}[0-9]{9}]" required>
+                </span>
+                <span>
+                    <span>URL</span><br>
+                    <input type="url" name="URL" id="URL" placeholder="Fundraiser URL" required disabled>
+                </span>
+            </div>
+            <div class="thirdfundraiserDetail">
+                <span>
+                    <span>About My Resolution</span><br>
+                    <textarea name="aboutResolution" id="aboutResolution" cols="30" rows="10" placeholder="Enter about  my resolution.."></textarea>
+                </span>
+                <span>
+                    <span>My Story</span><br>
+                    <textarea name="MyStory" id="MyStory" cols="30" rows="10" placeholder="Enter my story.."></textarea>
+                </span>
+            </div>
+            <div class="fourthfundraiserDetail">
+                <span>
+                    <span>Money Raised For</span><br>
+                    <textarea name="moneyRaised" id="moneyRaised" cols="30" rows="10" placeholder="Enter my story.."></textarea>
+                </span>
+            </div>
+            <div class="formButton">
+                <a href="#"><button type="reset" class="fundButton donorButton">Cancel</button></a>
+                <a href="#"><button type="submit" class="fundButton">Save</button></a>
+            </div>
+    </div>
+</body>
+</html>
