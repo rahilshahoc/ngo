@@ -73,7 +73,8 @@ section {
 .lowerPart p {
     display: flex;
     justify-content: end;
-    margin-right: 20px;
+    margin-right: 100px;
+    font-size: 28px;
 }
 .lowerPart p a {
     text-decoration: none;
@@ -130,6 +131,7 @@ aside {
 }
 .rightAside {
     width: 75%;
+    background-color: #f8f8f8;
 }
 .upperPortion {
     background-color: #FD89001A;
@@ -180,7 +182,7 @@ aside {
 }
 p.no-donor {
     font-weight: 700;
-    margin: 20px 0 0 3px;
+    margin: 20px 0 0 35px;
     font-size: 28px;
 }
 .totalRaise p , .totalDonors p {

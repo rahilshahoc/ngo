@@ -73,7 +73,8 @@ section {
 .lowerPart p {
     display: flex;
     justify-content: end;
-    margin-right: 20px;
+    margin-right: 100px;
+    font-size: 28px;
 }
 .lowerPart p a {
     text-decoration: none;
@@ -135,7 +136,7 @@ aside {
 .rightAside {
     width: 75%;
     padding: 0 20px 20px;
-    background-color: #eaeaea;
+    background-color: #f8f8f8;
 }
 .rightAside h1 {
     color: #FD8900;
@@ -156,15 +157,19 @@ label {
     flex-direction: column;
     gap: 8px;
 }
+input, textarea {
+    font-size: 18px;
+    color: #171A1F;
+}
 .mainCol {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     padding: 0px 40px;
 }
 .firstCol {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 28px;
     margin-top: 10px;
 }
 #FundraisingTarget , #MyStory , #MoneyRaised {
@@ -182,20 +187,22 @@ label {
     padding: 16px;
     border: 1px solid #D9D9D9;
     border-radius: 8px;
+    height: 208px;
 }
 textarea#MyStory\ filled {
     border: 1px solid #D9D9D9;
     padding: 16px;
     border-radius: 8px;
-    height: 308px;
+    height: 315px;
     width: 450px;
+    outline: none;
 }
 .aboutMe {
 position: relative;
 top: 10px;
 }
 .thirdCol {
-    margin-top: 20px;
+    margin-top: 28px;
     padding: 0 40px;
 }
 #MoneyRaised {
