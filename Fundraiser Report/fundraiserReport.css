@@ -34,12 +34,14 @@ section {
     margin-left: 80px;
 }
 .content h1 {
+    font-family:"Helvetica", Sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: #E9F7F0;
     letter-spacing: 2px;
 }
 .content p {
+    font-family:"Helvetica", Sans-serif;
     font-size: 24px;
     font-weight: 400;
     margin-top: 20px;
@@ -70,6 +72,7 @@ section {
     border-top: none;
 }
 .lowerPart p {
+    font-family: "Inter", sans-serif;
     display: flex;
     justify-content: end;
     margin-right: 100px;
