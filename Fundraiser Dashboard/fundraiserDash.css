@@ -75,7 +75,7 @@ section {
     font-family: "Inter", sans-serif;
     display: flex;
     justify-content: end;
-    margin-right: 100px;
+    margin-right: 60px;
     font-size: 28px;
 }
 .lowerPart p a {
@@ -157,7 +157,10 @@ aside {
     bottom: 35px;
 }
 .totalRaise {
-    border: 3px solid #0000ff;
+    /* border: 3px solid #0000ff; */
+    border: 3px solid transparent;
+    border-image: linear-gradient(180deg, #000080 0%, #9F959520 80%);
+    border-image-slice: 1;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -170,25 +173,32 @@ aside {
 }
 .totalRaise .amtMoney ,  .no-donor {
     font-family: "Roboto", sans-serif;
-    margin: 20px 0 0 30px;
+    margin: 20px 0 0 60px;
     font-size: 28px;
     font-weight: 700;
 }
 .totalDonors {
-    border: 3px solid #008000;
+    /* border: 3px solid #008000; */
+    border: 3px solid transparent;
+    border-image: linear-gradient(180deg, #0FA900 0%, #9F959520 80%);
+    border-image-slice: 1;
+    min-width: 279px;
     padding: 15px 30px;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
     background-color: #fff;
 }
-p.no-donor {
+.totalDonors .no-donor {
     font-weight: 700;
-    margin: 20px 0 0 35px;
+    margin: 20px 0 0 60px;
     font-size: 28px;
 }
 .totalRaise p , .totalDonors p {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
