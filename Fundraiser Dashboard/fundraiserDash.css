@@ -159,8 +159,14 @@ aside {
 .totalRaise {
     /* border: 3px solid #0000ff; */
     border: 3px solid transparent;
-    border-image: linear-gradient(180deg, #000080 0%, #9F959520 80%);
-    border-image-slice: 1;
+    border-radius: 16px;
+    background: 
+      linear-gradient(to right, white, white), 
+      linear-gradient(to bottom, #000080 , #9F959520); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    /* border-image: linear-gradient(180deg, #000080 0%, #9F959520 80%);
+    border-image-slice: 1; */
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -180,8 +186,14 @@ aside {
 .totalDonors {
     /* border: 3px solid #008000; */
     border: 3px solid transparent;
-    border-image: linear-gradient(180deg, #0FA900 0%, #9F959520 80%);
-    border-image-slice: 1;
+    border-radius: 16px;
+    background: 
+      linear-gradient(to right, white, white), 
+      linear-gradient(to bottom, #0FA900 , #9F959520); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    /* border-image: linear-gradient(180deg, #0FA900 0%, #9F959520 80%);
+    border-image-slice: 1; */
     min-width: 279px;
     padding: 15px 30px;
     display: flex;

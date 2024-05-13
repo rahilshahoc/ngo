@@ -43,12 +43,14 @@
     align-items: center;
   }
   .mainClass .contributers .goal .subGoal .currentGoal {
-    font-size: 90px;
-    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    font-weight: 700;
     color: #000080;
   }
   .mainClass .contributers .goal .subGoal .completeGoal {
-    font-size: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
     font-weight: 400;
   }
   .mainClass .contributers .goal .subGoal .totalGoal {
@@ -170,12 +172,14 @@
     padding: 28px 60px 0;
   }
   .mainAside .leftAside .aboutMe {
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
     color: #303030;
   }
   .mainAside .leftAside .reason {
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 28px;
     line-height: 32px;
@@ -191,9 +195,6 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    position: relative;
-    /* bottom: 30px; */
-    border-radius: 16px;
   }
   .mainAside .rightAside .container .supporters {
     font-family: "Roboto", sans-serif;
